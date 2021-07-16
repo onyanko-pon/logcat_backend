@@ -15,7 +15,7 @@ type Json = {
 }
 
 async function getLogList(): Promise<LogConfig[]> {
-  const jsonStr: string = await fs.readFileSync(process.env.LOGS_CAT_CONFIG_PATH ?? `${appRoot}/logs-cat.json`, 'utf-8')
+  const jsonStr: string = await fs.readFileSync(process.env.LOGCAT_CONFIG_PATH ?? `${appRoot}/logcat.config.json`, 'utf-8')
   const json: Json = JSON.parse(jsonStr)
   return json.logs
 }
