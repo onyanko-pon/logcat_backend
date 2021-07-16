@@ -5,6 +5,6 @@ const router = express.Router()
 
 router.get('', getList)
 router.get('/:logFileName', getLog)
-router.get('/:logFileName', deleteLog)
+router.delete('/:logFileName', deleteLog)
 
 export default router

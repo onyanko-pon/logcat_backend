@@ -2,7 +2,7 @@
   "logs": [
     {
       "name": "sample.log",
-      "filePath": "/Users/maruyamatsukasa/Development/log-cat/sample.log"
+      "filePath": "/usr/src/app/sample.log"
     }
   ]
 }

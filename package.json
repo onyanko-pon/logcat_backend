@@ -5,11 +5,16 @@
   "author": "tsukasa-forever <engineer.tsukasa@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon"
+    "start": "NODE_ENV=production node dist/index.js",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "dev": "NODE_ENV=development nodemon"
   },
   "dependencies": {
+    "@types/morgan": "^1.9.3",
     "app-root-path": "^3.0.0",
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.12"
   },
   "devDependencies": {
