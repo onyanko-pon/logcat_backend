@@ -10,7 +10,6 @@ This web app can do folloings with HTTP
 
 1. build/run docker container or build with Node.js in the host machine
 
-[Dockerhub](https://hub.docker.com/r/onyankopon/logcat)
 
 ## build
 
@@ -27,6 +26,7 @@ You should set target log files info to `logcat.config.json`
 
 - volume log files
 - volume `logcat.config.json` or set env LOGCAT_CONFIG_PATH
+- build app
 
 ```sh
 $ yarn install
@@ -38,8 +38,11 @@ $ yarn start
 
 - volume log files
 - volume `logcat.config.json` or set env LOGCAT_CONFIG_PATH
+- build app with docker
 
 example
 ```sh
 $  docker run --name logcat -p 3000:3000 -v sample.log:/usr/src/app/sample.log -v logcat.config.json:/usr/src/app/logcat.config.json onyankopon/logcat
 ```
+
+[Dockerhub](https://hub.docker.com/r/onyankopon/logcat)
